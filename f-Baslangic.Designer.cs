@@ -85,6 +85,7 @@ namespace Eyp_PaketServisv1._2
             this.button9.TabIndex = 8;
             this.button9.Text = "Çıkış";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 

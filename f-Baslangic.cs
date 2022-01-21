@@ -54,5 +54,10 @@ namespace Eyp_PaketServisv1._2
             context.Database.Delete();
             MessageBox.Show("silindi");
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
