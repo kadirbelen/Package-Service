@@ -39,6 +39,7 @@ namespace Eyp_PaketServisv1._2
         private void f_Baslangic_Load(object sender, EventArgs e)
         {
            // VeriTabaniEkleme();
+           //gardesss artistlik yapma
         }
 
         private static void VeriTabaniEkleme()
