@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,25 @@ namespace Eyp_PaketServisv1._2
         {
             f_Stok f_Stok = new f_Stok();
             f_Stok.ShowDialog();
+        }
+
+        private void f_Baslangic_Load(object sender, EventArgs e)
+        {
+           // VeriTabaniEkleme();
+        }
+
+        private static void VeriTabaniEkleme()
+        {
+            PackageServiceDbContext context = new PackageServiceDbContext();
+            context.Database.Create();
+            MessageBox.Show("eklendi");
+        }
+
+        private static void VeriTabaniSilme()
+        {
+            PackageServiceDbContext context = new PackageServiceDbContext();
+            context.Database.Delete();
+            MessageBox.Show("silindi");
         }
     }
 }

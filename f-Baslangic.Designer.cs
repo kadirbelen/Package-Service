@@ -262,6 +262,7 @@ namespace Eyp_PaketServisv1._2
             this.Name = "f_Baslangic";
             this.ShowInTaskbar = false;
             this.Text = "Eyp | ";
+            this.Load += new System.EventHandler(this.f_Baslangic_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
