@@ -1,0 +1,6 @@
+C:\Users\eyili\Source\Repos\Package-Service\Entities\bin\Debug\Entities.dll
+C:\Users\eyili\Source\Repos\Package-Service\Entities\bin\Debug\Entities.pdb
+C:\Users\eyili\Source\Repos\Package-Service\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\eyili\Source\Repos\Package-Service\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\eyili\Source\Repos\Package-Service\Entities\obj\Debug\Entities.dll
+C:\Users\eyili\Source\Repos\Package-Service\Entities\obj\Debug\Entities.pdb
