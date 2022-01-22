@@ -35,7 +35,6 @@ namespace Eyp_PaketServisv1._2
             this.cmbCategoryName = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtBarcode = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.txtSalePrice = new System.Windows.Forms.TextBox();
@@ -45,7 +44,6 @@ namespace Eyp_PaketServisv1._2
             this.txtPurchasePrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,7 +54,6 @@ namespace Eyp_PaketServisv1._2
             this.btnProductReport = new System.Windows.Forms.Button();
             this.btnProductAdd = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnCreateBarcode = new System.Windows.Forms.Button();
             this.CategoryAddPage = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,7 +92,6 @@ namespace Eyp_PaketServisv1._2
             this.splitContainer1.Panel1.Controls.Add(this.cmbCategoryName);
             this.splitContainer1.Panel1.Controls.Add(this.label12);
             this.splitContainer1.Panel1.Controls.Add(this.label11);
-            this.splitContainer1.Panel1.Controls.Add(this.txtBarcode);
             this.splitContainer1.Panel1.Controls.Add(this.txtStock);
             this.splitContainer1.Panel1.Controls.Add(this.txtProductName);
             this.splitContainer1.Panel1.Controls.Add(this.txtSalePrice);
@@ -105,7 +101,6 @@ namespace Eyp_PaketServisv1._2
             this.splitContainer1.Panel1.Controls.Add(this.txtPurchasePrice);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.label9);
-            this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label10);
             this.splitContainer1.Panel1.Controls.Add(this.label8);
             this.splitContainer1.Panel1.Controls.Add(this.label7);
@@ -116,7 +111,6 @@ namespace Eyp_PaketServisv1._2
             this.splitContainer1.Panel1.Controls.Add(this.btnProductReport);
             this.splitContainer1.Panel1.Controls.Add(this.btnProductAdd);
             this.splitContainer1.Panel1.Controls.Add(this.btnClose);
-            this.splitContainer1.Panel1.Controls.Add(this.btnCreateBarcode);
             this.splitContainer1.Panel1.Controls.Add(this.CategoryAddPage);
             // 
             // splitContainer1.Panel2
@@ -142,7 +136,7 @@ namespace Eyp_PaketServisv1._2
             // 
             // productDate
             // 
-            this.productDate.Location = new System.Drawing.Point(148, 186);
+            this.productDate.Location = new System.Drawing.Point(148, 157);
             this.productDate.Margin = new System.Windows.Forms.Padding(4);
             this.productDate.Name = "productDate";
             this.productDate.Size = new System.Drawing.Size(192, 22);
@@ -152,7 +146,7 @@ namespace Eyp_PaketServisv1._2
             // 
             this.cmbCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbCategoryName.FormattingEnabled = true;
-            this.cmbCategoryName.Location = new System.Drawing.Point(148, 138);
+            this.cmbCategoryName.Location = new System.Drawing.Point(148, 109);
             this.cmbCategoryName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCategoryName.Name = "cmbCategoryName";
             this.cmbCategoryName.Size = new System.Drawing.Size(192, 30);
@@ -181,15 +175,6 @@ namespace Eyp_PaketServisv1._2
             this.label11.Size = new System.Drawing.Size(96, 25);
             this.label11.TabIndex = 7;
             this.label11.Text = "Kullanıcı :";
-            // 
-            // txtBarcode
-            // 
-            this.txtBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBarcode.Location = new System.Drawing.Point(148, 98);
-            this.txtBarcode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(192, 30);
-            this.txtBarcode.TabIndex = 5;
             // 
             // txtStock
             // 
@@ -224,7 +209,7 @@ namespace Eyp_PaketServisv1._2
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label4.Location = new System.Drawing.Point(58, 186);
+            this.label4.Location = new System.Drawing.Point(58, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 4;
@@ -264,7 +249,7 @@ namespace Eyp_PaketServisv1._2
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label3.Location = new System.Drawing.Point(12, 145);
+            this.label3.Location = new System.Drawing.Point(12, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 25);
             this.label3.TabIndex = 4;
@@ -281,18 +266,6 @@ namespace Eyp_PaketServisv1._2
             this.label9.Size = new System.Drawing.Size(100, 25);
             this.label9.TabIndex = 4;
             this.label9.Text = "Kdv Oranı";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label2.Location = new System.Drawing.Point(11, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Barkod No";
             // 
             // label10
             // 
@@ -373,7 +346,7 @@ namespace Eyp_PaketServisv1._2
             this.productDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.productDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.productDelete.ForeColor = System.Drawing.Color.White;
-            this.productDelete.Location = new System.Drawing.Point(957, 238);
+            this.productDelete.Location = new System.Drawing.Point(798, 238);
             this.productDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.productDelete.Name = "productDelete";
             this.productDelete.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -390,7 +363,7 @@ namespace Eyp_PaketServisv1._2
             this.btnProductReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnProductReport.ForeColor = System.Drawing.Color.White;
-            this.btnProductReport.Location = new System.Drawing.Point(772, 238);
+            this.btnProductReport.Location = new System.Drawing.Point(600, 238);
             this.btnProductReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProductReport.Name = "btnProductReport";
             this.btnProductReport.Size = new System.Drawing.Size(152, 70);
@@ -406,7 +379,7 @@ namespace Eyp_PaketServisv1._2
             this.btnProductAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnProductAdd.ForeColor = System.Drawing.Color.White;
-            this.btnProductAdd.Location = new System.Drawing.Point(587, 238);
+            this.btnProductAdd.Location = new System.Drawing.Point(409, 238);
             this.btnProductAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProductAdd.Name = "btnProductAdd";
             this.btnProductAdd.Size = new System.Drawing.Size(152, 70);
@@ -422,7 +395,7 @@ namespace Eyp_PaketServisv1._2
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(400, 238);
+            this.btnClose.Location = new System.Drawing.Point(226, 238);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(152, 70);
@@ -430,22 +403,6 @@ namespace Eyp_PaketServisv1._2
             this.btnClose.Text = "İptal";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnCreateBarcode
-            // 
-            this.btnCreateBarcode.BackColor = System.Drawing.Color.Tomato;
-            this.btnCreateBarcode.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.btnCreateBarcode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreateBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCreateBarcode.ForeColor = System.Drawing.Color.White;
-            this.btnCreateBarcode.Location = new System.Drawing.Point(213, 238);
-            this.btnCreateBarcode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCreateBarcode.Name = "btnCreateBarcode";
-            this.btnCreateBarcode.Size = new System.Drawing.Size(152, 70);
-            this.btnCreateBarcode.TabIndex = 3;
-            this.btnCreateBarcode.Text = "Barkod Oluştur";
-            this.btnCreateBarcode.UseVisualStyleBackColor = false;
-            this.btnCreateBarcode.Click += new System.EventHandler(this.btnCreateBarcode_Click);
             // 
             // CategoryAddPage
             // 
@@ -616,14 +573,12 @@ namespace Eyp_PaketServisv1._2
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.TextBox txtSalePrice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
@@ -636,7 +591,6 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.Button btnProductReport;
         private System.Windows.Forms.Button btnProductAdd;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnCreateBarcode;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button productDelete;

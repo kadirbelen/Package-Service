@@ -60,5 +60,17 @@ namespace Eyp_PaketServisv1._2
         {
             this.Close();
         }
+
+        private void btnPacketServis_Click(object sender, EventArgs e)
+        {
+            fSiparis fSiparis = new fSiparis();
+            fSiparis.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            fMusteriYok fMusteriYok = new fMusteriYok();
+            fMusteriYok.ShowDialog();
+        }
     }
 }

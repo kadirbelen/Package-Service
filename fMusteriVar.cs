@@ -24,18 +24,18 @@ namespace Eyp_PaketServisv1._2
 
         }
 
-        public void List(string phone)
-        {
-            var result = customerManager.GetById(phone);
-            txtCustomerName.Text = result.Name;
-            txtCustomerSurname.Text = result.Surname;
-            txtAddress1.Text = result.Address1;
-            txtAddress2.Text = result.Address2;
-            txtAddress3.Text = result.Address3;
-            txtPhone1.Text = result.Phone1;
-            txtPhone2.Text = result.Phone2;
-            txtCustomerNote.Text = result.CustomerNote;
+        //public void List(string phone)
+        //{
+        //    var result = customerManager.GetById(phone);
+        //    txtCustomerName.Text = result.Name;
+        //    txtCustomerSurname.Text = result.Surname;
+        //    txtAddress1.Text = result.Address1;
+        //    txtAddress2.Text = result.Address2;
+        //    txtAddress3.Text = result.Address3;
+        //    txtPhone1.Text = result.Phone1;
+        //    txtPhone2.Text = result.Phone2;
+        //    txtCustomerNote.Text = result.CustomerNote;
             
-        }
+        //}
     }
 }

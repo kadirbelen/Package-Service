@@ -46,11 +46,20 @@ namespace Eyp_PaketServisv1._2
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.button33 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
+            this.btnTableChoose = new System.Windows.Forms.Button();
+            this.btnCustomerShow = new System.Windows.Forms.Button();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCustomerName = new System.Windows.Forms.Label();
+            this.dataGridFis = new System.Windows.Forms.DataGridView();
+            this.UrunAdi1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Miktar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fiyat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Arttir = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Eksilt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -84,15 +93,6 @@ namespace Eyp_PaketServisv1._2
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UrunAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataGridFis = new System.Windows.Forms.DataGridView();
-            this.UrunAdi1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Miktar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fiyat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Arttir = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eksilt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -106,6 +106,8 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -122,8 +124,6 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridFis)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -142,15 +142,16 @@ namespace Eyp_PaketServisv1._2
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1421, 636);
-            this.splitContainer1.SplitterDistance = 545;
+            this.splitContainer1.Size = new System.Drawing.Size(1895, 783);
+            this.splitContainer1.SplitterDistance = 1018;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 0, 1);
@@ -162,7 +163,7 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.918239F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.62893F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.2956F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(545, 636);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1018, 783);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -179,13 +180,13 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.splitContainer4, 4, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 525);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 647);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(545, 111);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 137F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1018, 136);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // button4
@@ -195,10 +196,10 @@ namespace Eyp_PaketServisv1._2
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(244, 1);
+            this.button4.Location = new System.Drawing.Point(457, 1);
             this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(79, 109);
+            this.button4.Size = new System.Drawing.Size(150, 134);
             this.button4.TabIndex = 3;
             this.button4.Text = "Veresiye Satış (f4)";
             this.button4.UseVisualStyleBackColor = false;
@@ -210,10 +211,10 @@ namespace Eyp_PaketServisv1._2
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(163, 1);
+            this.button3.Location = new System.Drawing.Point(305, 1);
             this.button3.Margin = new System.Windows.Forms.Padding(1);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 109);
+            this.button3.Size = new System.Drawing.Size(150, 134);
             this.button3.TabIndex = 2;
             this.button3.Text = "Kart Nakit (f3)";
             this.button3.UseVisualStyleBackColor = false;
@@ -225,10 +226,10 @@ namespace Eyp_PaketServisv1._2
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(82, 1);
+            this.button2.Location = new System.Drawing.Point(153, 1);
             this.button2.Margin = new System.Windows.Forms.Padding(1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 109);
+            this.button2.Size = new System.Drawing.Size(150, 134);
             this.button2.TabIndex = 1;
             this.button2.Text = "Kredi Kartı (f2)";
             this.button2.UseVisualStyleBackColor = false;
@@ -243,7 +244,7 @@ namespace Eyp_PaketServisv1._2
             this.button1.Location = new System.Drawing.Point(1, 1);
             this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 109);
+            this.button1.Size = new System.Drawing.Size(150, 134);
             this.button1.TabIndex = 0;
             this.button1.Text = "Nakit Satış (f1)";
             this.button1.UseVisualStyleBackColor = false;
@@ -252,7 +253,7 @@ namespace Eyp_PaketServisv1._2
             // 
             this.splitContainer4.BackColor = System.Drawing.Color.Tomato;
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.Location = new System.Drawing.Point(324, 0);
+            this.splitContainer4.Location = new System.Drawing.Point(608, 0);
             this.splitContainer4.Margin = new System.Windows.Forms.Padding(0);
             this.splitContainer4.Name = "splitContainer4";
             this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -265,8 +266,9 @@ namespace Eyp_PaketServisv1._2
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.tableLayoutPanel5);
-            this.splitContainer4.Size = new System.Drawing.Size(221, 111);
-            this.splitContainer4.SplitterDistance = 33;
+            this.splitContainer4.Size = new System.Drawing.Size(410, 136);
+            this.splitContainer4.SplitterDistance = 40;
+            this.splitContainer4.SplitterWidth = 5;
             this.splitContainer4.TabIndex = 4;
             // 
             // tableLayoutPanel6
@@ -282,8 +284,8 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(221, 33);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(410, 40);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // label7
@@ -293,10 +295,10 @@ namespace Eyp_PaketServisv1._2
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(63, 0);
+            this.label7.Location = new System.Drawing.Point(118, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(158, 33);
+            this.label7.Size = new System.Drawing.Size(292, 40);
             this.label7.TabIndex = 1;
             this.label7.Text = "000";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -311,7 +313,7 @@ namespace Eyp_PaketServisv1._2
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 33);
+            this.label6.Size = new System.Drawing.Size(118, 40);
             this.label6.TabIndex = 0;
             this.label6.Text = "TUTAR :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -333,7 +335,7 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(221, 74);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(410, 91);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // label4
@@ -343,10 +345,10 @@ namespace Eyp_PaketServisv1._2
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(110, 37);
+            this.label4.Location = new System.Drawing.Point(205, 45);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 37);
+            this.label4.Size = new System.Drawing.Size(205, 46);
             this.label4.TabIndex = 3;
             this.label4.Text = "PARA ÜSTÜ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -358,10 +360,10 @@ namespace Eyp_PaketServisv1._2
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(0, 37);
+            this.label3.Location = new System.Drawing.Point(0, 45);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 37);
+            this.label3.Size = new System.Drawing.Size(205, 46);
             this.label3.TabIndex = 2;
             this.label3.Text = "ÖDENEN";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -373,10 +375,10 @@ namespace Eyp_PaketServisv1._2
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(110, 0);
+            this.label2.Location = new System.Drawing.Point(205, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 37);
+            this.label2.Size = new System.Drawing.Size(205, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "000";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -391,7 +393,7 @@ namespace Eyp_PaketServisv1._2
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 37);
+            this.label1.Size = new System.Drawing.Size(205, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "000";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -404,36 +406,37 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Controls.Add(this.button33, 4, 0);
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel8.Controls.Add(this.btnClear, 4, 0);
             this.tableLayoutPanel8.Controls.Add(this.button32, 3, 0);
             this.tableLayoutPanel8.Controls.Add(this.button31, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button30, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button29, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btnTableChoose, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btnCustomerShow, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(545, 44);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1018, 54);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
-            // button33
+            // btnClear
             // 
-            this.button33.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button33.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button33.ForeColor = System.Drawing.Color.White;
-            this.button33.Location = new System.Drawing.Point(437, 1);
-            this.button33.Margin = new System.Windows.Forms.Padding(1);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(107, 42);
-            this.button33.TabIndex = 4;
-            this.button33.Text = "Temizle";
-            this.button33.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(813, 1);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(1);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(204, 52);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "Temizle";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // button32
             // 
@@ -443,10 +446,10 @@ namespace Eyp_PaketServisv1._2
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Location = new System.Drawing.Point(328, 1);
+            this.button32.Location = new System.Drawing.Point(610, 1);
             this.button32.Margin = new System.Windows.Forms.Padding(1);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(107, 42);
+            this.button32.Size = new System.Drawing.Size(201, 52);
             this.button32.TabIndex = 3;
             this.button32.Text = "Hesap Al";
             this.button32.UseVisualStyleBackColor = false;
@@ -459,45 +462,137 @@ namespace Eyp_PaketServisv1._2
             this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button31.ForeColor = System.Drawing.Color.White;
-            this.button31.Location = new System.Drawing.Point(219, 1);
+            this.button31.Location = new System.Drawing.Point(407, 1);
             this.button31.Margin = new System.Windows.Forms.Padding(1);
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(107, 42);
+            this.button31.Size = new System.Drawing.Size(201, 52);
             this.button31.TabIndex = 2;
             this.button31.Text = "Sipariş Listesi";
             this.button31.UseVisualStyleBackColor = false;
             // 
-            // button30
+            // btnTableChoose
             // 
-            this.button30.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button30.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Location = new System.Drawing.Point(110, 1);
-            this.button30.Margin = new System.Windows.Forms.Padding(1);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(107, 42);
-            this.button30.TabIndex = 1;
-            this.button30.Text = "Masa Seç";
-            this.button30.UseVisualStyleBackColor = false;
+            this.btnTableChoose.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnTableChoose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTableChoose.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnTableChoose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTableChoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTableChoose.ForeColor = System.Drawing.Color.White;
+            this.btnTableChoose.Location = new System.Drawing.Point(204, 1);
+            this.btnTableChoose.Margin = new System.Windows.Forms.Padding(1);
+            this.btnTableChoose.Name = "btnTableChoose";
+            this.btnTableChoose.Size = new System.Drawing.Size(201, 52);
+            this.btnTableChoose.TabIndex = 1;
+            this.btnTableChoose.Text = "Masa Seç";
+            this.btnTableChoose.UseVisualStyleBackColor = false;
             // 
-            // button29
+            // btnCustomerShow
             // 
-            this.button29.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button29.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button29.ForeColor = System.Drawing.Color.White;
-            this.button29.Location = new System.Drawing.Point(1, 1);
-            this.button29.Margin = new System.Windows.Forms.Padding(1);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(107, 42);
-            this.button29.TabIndex = 0;
-            this.button29.Text = "Müşteri Seç";
-            this.button29.UseVisualStyleBackColor = false;
+            this.btnCustomerShow.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCustomerShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCustomerShow.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCustomerShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomerShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCustomerShow.ForeColor = System.Drawing.Color.White;
+            this.btnCustomerShow.Location = new System.Drawing.Point(1, 1);
+            this.btnCustomerShow.Margin = new System.Windows.Forms.Padding(1);
+            this.btnCustomerShow.Name = "btnCustomerShow";
+            this.btnCustomerShow.Size = new System.Drawing.Size(201, 52);
+            this.btnCustomerShow.TabIndex = 0;
+            this.btnCustomerShow.Text = "Müşteri Seç";
+            this.btnCustomerShow.UseVisualStyleBackColor = false;
+            this.btnCustomerShow.Click += new System.EventHandler(this.btnCustomerShow_Click);
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 1;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.Controls.Add(this.lblCustomerName, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.dataGridFis, 0, 1);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 54);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 2;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.81081F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.18919F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1018, 593);
+            this.tableLayoutPanel9.TabIndex = 2;
+            this.tableLayoutPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel9_Paint);
+            // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.AutoSize = true;
+            this.lblCustomerName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCustomerName.ForeColor = System.Drawing.Color.Teal;
+            this.lblCustomerName.Location = new System.Drawing.Point(0, 0);
+            this.lblCustomerName.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.Size = new System.Drawing.Size(1018, 64);
+            this.lblCustomerName.TabIndex = 0;
+            this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // dataGridFis
+            // 
+            this.dataGridFis.AllowUserToOrderColumns = true;
+            this.dataGridFis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridFis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UrunAdi1,
+            this.Miktar,
+            this.Fiyat,
+            this.Arttir,
+            this.Eksilt,
+            this.Sil});
+            this.dataGridFis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridFis.Location = new System.Drawing.Point(4, 68);
+            this.dataGridFis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridFis.Name = "dataGridFis";
+            this.dataGridFis.RowHeadersWidth = 51;
+            this.dataGridFis.Size = new System.Drawing.Size(1010, 521);
+            this.dataGridFis.TabIndex = 1;
+            // 
+            // UrunAdi1
+            // 
+            this.UrunAdi1.HeaderText = "Ürün Adı";
+            this.UrunAdi1.MinimumWidth = 6;
+            this.UrunAdi1.Name = "UrunAdi1";
+            this.UrunAdi1.Width = 125;
+            // 
+            // Miktar
+            // 
+            this.Miktar.HeaderText = "Miktar";
+            this.Miktar.MinimumWidth = 6;
+            this.Miktar.Name = "Miktar";
+            this.Miktar.Width = 125;
+            // 
+            // Fiyat
+            // 
+            this.Fiyat.HeaderText = "Fiyat";
+            this.Fiyat.MinimumWidth = 6;
+            this.Fiyat.Name = "Fiyat";
+            this.Fiyat.Width = 125;
+            // 
+            // Arttir
+            // 
+            this.Arttir.HeaderText = "+";
+            this.Arttir.MinimumWidth = 6;
+            this.Arttir.Name = "Arttir";
+            this.Arttir.Width = 125;
+            // 
+            // Eksilt
+            // 
+            this.Eksilt.HeaderText = "-";
+            this.Eksilt.MinimumWidth = 6;
+            this.Eksilt.Name = "Eksilt";
+            this.Eksilt.Width = 125;
+            // 
+            // Sil
+            // 
+            this.Sil.HeaderText = "Sil X";
+            this.Sil.MinimumWidth = 6;
+            this.Sil.Name = "Sil";
+            this.Sil.Width = 125;
             // 
             // splitContainer2
             // 
@@ -513,14 +608,16 @@ namespace Eyp_PaketServisv1._2
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer2.Size = new System.Drawing.Size(872, 636);
+            this.splitContainer2.Size = new System.Drawing.Size(872, 783);
             this.splitContainer2.SplitterDistance = 427;
+            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // splitContainer3
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -531,8 +628,9 @@ namespace Eyp_PaketServisv1._2
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.splitContainer5);
-            this.splitContainer3.Size = new System.Drawing.Size(427, 636);
-            this.splitContainer3.SplitterDistance = 321;
+            this.splitContainer3.Size = new System.Drawing.Size(427, 783);
+            this.splitContainer3.SplitterDistance = 395;
+            this.splitContainer3.SplitterWidth = 5;
             this.splitContainer3.TabIndex = 0;
             // 
             // tableLayoutPanel4
@@ -558,7 +656,7 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(427, 321);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(427, 395);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // button22
@@ -568,10 +666,10 @@ namespace Eyp_PaketServisv1._2
             this.button22.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Location = new System.Drawing.Point(285, 215);
+            this.button22.Location = new System.Drawing.Point(285, 263);
             this.button22.Margin = new System.Windows.Forms.Padding(1);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(141, 105);
+            this.button22.Size = new System.Drawing.Size(141, 131);
             this.button22.TabIndex = 8;
             this.button22.Text = "Tüm Menü";
             this.button22.UseVisualStyleBackColor = false;
@@ -583,10 +681,10 @@ namespace Eyp_PaketServisv1._2
             this.button21.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Location = new System.Drawing.Point(143, 215);
+            this.button21.Location = new System.Drawing.Point(143, 263);
             this.button21.Margin = new System.Windows.Forms.Padding(1);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(140, 105);
+            this.button21.Size = new System.Drawing.Size(140, 131);
             this.button21.TabIndex = 7;
             this.button21.Text = "Ürün Menü";
             this.button21.UseVisualStyleBackColor = false;
@@ -598,10 +696,10 @@ namespace Eyp_PaketServisv1._2
             this.button20.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Location = new System.Drawing.Point(1, 215);
+            this.button20.Location = new System.Drawing.Point(1, 263);
             this.button20.Margin = new System.Windows.Forms.Padding(1);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(140, 105);
+            this.button20.Size = new System.Drawing.Size(140, 131);
             this.button20.TabIndex = 6;
             this.button20.Text = "Ürün Menü";
             this.button20.UseVisualStyleBackColor = false;
@@ -613,10 +711,10 @@ namespace Eyp_PaketServisv1._2
             this.button19.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Location = new System.Drawing.Point(285, 108);
+            this.button19.Location = new System.Drawing.Point(285, 132);
             this.button19.Margin = new System.Windows.Forms.Padding(1);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(141, 105);
+            this.button19.Size = new System.Drawing.Size(141, 129);
             this.button19.TabIndex = 5;
             this.button19.Text = "Ürün Menü";
             this.button19.UseVisualStyleBackColor = false;
@@ -628,10 +726,10 @@ namespace Eyp_PaketServisv1._2
             this.button18.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Location = new System.Drawing.Point(143, 108);
+            this.button18.Location = new System.Drawing.Point(143, 132);
             this.button18.Margin = new System.Windows.Forms.Padding(1);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(140, 105);
+            this.button18.Size = new System.Drawing.Size(140, 129);
             this.button18.TabIndex = 4;
             this.button18.Text = "Ürün Menü";
             this.button18.UseVisualStyleBackColor = false;
@@ -643,10 +741,10 @@ namespace Eyp_PaketServisv1._2
             this.button17.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Location = new System.Drawing.Point(1, 108);
+            this.button17.Location = new System.Drawing.Point(1, 132);
             this.button17.Margin = new System.Windows.Forms.Padding(1);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(140, 105);
+            this.button17.Size = new System.Drawing.Size(140, 129);
             this.button17.TabIndex = 3;
             this.button17.Text = "Ürün Menü";
             this.button17.UseVisualStyleBackColor = false;
@@ -661,7 +759,7 @@ namespace Eyp_PaketServisv1._2
             this.button16.Location = new System.Drawing.Point(285, 1);
             this.button16.Margin = new System.Windows.Forms.Padding(1);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(141, 105);
+            this.button16.Size = new System.Drawing.Size(141, 129);
             this.button16.TabIndex = 2;
             this.button16.Text = "Ürün Menü";
             this.button16.UseVisualStyleBackColor = false;
@@ -676,7 +774,7 @@ namespace Eyp_PaketServisv1._2
             this.button15.Location = new System.Drawing.Point(143, 1);
             this.button15.Margin = new System.Windows.Forms.Padding(1);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(140, 105);
+            this.button15.Size = new System.Drawing.Size(140, 129);
             this.button15.TabIndex = 1;
             this.button15.Text = "Ürün Menü";
             this.button15.UseVisualStyleBackColor = false;
@@ -691,7 +789,7 @@ namespace Eyp_PaketServisv1._2
             this.button14.Location = new System.Drawing.Point(1, 1);
             this.button14.Margin = new System.Windows.Forms.Padding(1);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(140, 105);
+            this.button14.Size = new System.Drawing.Size(140, 129);
             this.button14.TabIndex = 0;
             this.button14.Text = "Ürün Menü";
             this.button14.UseVisualStyleBackColor = false;
@@ -711,8 +809,9 @@ namespace Eyp_PaketServisv1._2
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.tableLayoutPanel7);
-            this.splitContainer5.Size = new System.Drawing.Size(427, 311);
-            this.splitContainer5.SplitterDistance = 198;
+            this.splitContainer5.Size = new System.Drawing.Size(427, 383);
+            this.splitContainer5.SplitterDistance = 243;
+            this.splitContainer5.SplitterWidth = 5;
             this.splitContainer5.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -738,7 +837,7 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(427, 198);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(427, 243);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // button13
@@ -749,10 +848,10 @@ namespace Eyp_PaketServisv1._2
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(1, 133);
+            this.button13.Location = new System.Drawing.Point(1, 163);
             this.button13.Margin = new System.Windows.Forms.Padding(1);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(140, 64);
+            this.button13.Size = new System.Drawing.Size(140, 79);
             this.button13.TabIndex = 8;
             this.button13.Text = "Hızlı Ürün";
             this.button13.UseVisualStyleBackColor = false;
@@ -765,10 +864,10 @@ namespace Eyp_PaketServisv1._2
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(143, 133);
+            this.button12.Location = new System.Drawing.Point(143, 163);
             this.button12.Margin = new System.Windows.Forms.Padding(1);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(140, 64);
+            this.button12.Size = new System.Drawing.Size(140, 79);
             this.button12.TabIndex = 7;
             this.button12.Text = "Hızlı Ürün";
             this.button12.UseVisualStyleBackColor = false;
@@ -781,10 +880,10 @@ namespace Eyp_PaketServisv1._2
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(285, 133);
+            this.button11.Location = new System.Drawing.Point(285, 163);
             this.button11.Margin = new System.Windows.Forms.Padding(1);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(141, 64);
+            this.button11.Size = new System.Drawing.Size(141, 79);
             this.button11.TabIndex = 6;
             this.button11.Text = "Hızlı Ürün";
             this.button11.UseVisualStyleBackColor = false;
@@ -797,10 +896,10 @@ namespace Eyp_PaketServisv1._2
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(285, 67);
+            this.button10.Location = new System.Drawing.Point(285, 82);
             this.button10.Margin = new System.Windows.Forms.Padding(1);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(141, 64);
+            this.button10.Size = new System.Drawing.Size(141, 79);
             this.button10.TabIndex = 5;
             this.button10.Text = "Hızlı Ürün";
             this.button10.UseVisualStyleBackColor = false;
@@ -813,10 +912,10 @@ namespace Eyp_PaketServisv1._2
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(143, 67);
+            this.button9.Location = new System.Drawing.Point(143, 82);
             this.button9.Margin = new System.Windows.Forms.Padding(1);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(140, 64);
+            this.button9.Size = new System.Drawing.Size(140, 79);
             this.button9.TabIndex = 4;
             this.button9.Text = "Hızlı Ürün";
             this.button9.UseVisualStyleBackColor = false;
@@ -829,10 +928,10 @@ namespace Eyp_PaketServisv1._2
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(1, 67);
+            this.button8.Location = new System.Drawing.Point(1, 82);
             this.button8.Margin = new System.Windows.Forms.Padding(1);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(140, 64);
+            this.button8.Size = new System.Drawing.Size(140, 79);
             this.button8.TabIndex = 3;
             this.button8.Text = "Hızlı Ürün";
             this.button8.UseVisualStyleBackColor = false;
@@ -848,7 +947,7 @@ namespace Eyp_PaketServisv1._2
             this.button7.Location = new System.Drawing.Point(285, 1);
             this.button7.Margin = new System.Windows.Forms.Padding(1);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(141, 64);
+            this.button7.Size = new System.Drawing.Size(141, 79);
             this.button7.TabIndex = 2;
             this.button7.Text = "Hızlı Ürün";
             this.button7.UseVisualStyleBackColor = false;
@@ -864,7 +963,7 @@ namespace Eyp_PaketServisv1._2
             this.button6.Location = new System.Drawing.Point(143, 1);
             this.button6.Margin = new System.Windows.Forms.Padding(1);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 64);
+            this.button6.Size = new System.Drawing.Size(140, 79);
             this.button6.TabIndex = 1;
             this.button6.Text = "Hızlı Ürün";
             this.button6.UseVisualStyleBackColor = false;
@@ -880,7 +979,7 @@ namespace Eyp_PaketServisv1._2
             this.button5.Location = new System.Drawing.Point(1, 1);
             this.button5.Margin = new System.Windows.Forms.Padding(1);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 64);
+            this.button5.Size = new System.Drawing.Size(140, 79);
             this.button5.TabIndex = 0;
             this.button5.Text = "Hızlı Ürün";
             this.button5.UseVisualStyleBackColor = false;
@@ -906,8 +1005,8 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 109F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(427, 109);
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(427, 135);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // button28
@@ -921,7 +1020,7 @@ namespace Eyp_PaketServisv1._2
             this.button28.Location = new System.Drawing.Point(356, 1);
             this.button28.Margin = new System.Windows.Forms.Padding(1);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(70, 107);
+            this.button28.Size = new System.Drawing.Size(70, 133);
             this.button28.TabIndex = 5;
             this.button28.Text = "200 TL";
             this.button28.UseVisualStyleBackColor = false;
@@ -937,7 +1036,7 @@ namespace Eyp_PaketServisv1._2
             this.button27.Location = new System.Drawing.Point(285, 1);
             this.button27.Margin = new System.Windows.Forms.Padding(1);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(69, 107);
+            this.button27.Size = new System.Drawing.Size(69, 133);
             this.button27.TabIndex = 4;
             this.button27.Text = "100 TL";
             this.button27.UseVisualStyleBackColor = false;
@@ -953,7 +1052,7 @@ namespace Eyp_PaketServisv1._2
             this.button26.Location = new System.Drawing.Point(214, 1);
             this.button26.Margin = new System.Windows.Forms.Padding(1);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(69, 107);
+            this.button26.Size = new System.Drawing.Size(69, 133);
             this.button26.TabIndex = 3;
             this.button26.Text = "50 TL";
             this.button26.UseVisualStyleBackColor = false;
@@ -969,7 +1068,7 @@ namespace Eyp_PaketServisv1._2
             this.button25.Location = new System.Drawing.Point(143, 1);
             this.button25.Margin = new System.Windows.Forms.Padding(1);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(69, 107);
+            this.button25.Size = new System.Drawing.Size(69, 133);
             this.button25.TabIndex = 2;
             this.button25.Text = "40 TL";
             this.button25.UseVisualStyleBackColor = false;
@@ -985,7 +1084,7 @@ namespace Eyp_PaketServisv1._2
             this.button24.Location = new System.Drawing.Point(72, 1);
             this.button24.Margin = new System.Windows.Forms.Padding(1);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(69, 107);
+            this.button24.Size = new System.Drawing.Size(69, 133);
             this.button24.TabIndex = 1;
             this.button24.Text = "30 TL";
             this.button24.UseVisualStyleBackColor = false;
@@ -1001,7 +1100,7 @@ namespace Eyp_PaketServisv1._2
             this.button23.Location = new System.Drawing.Point(1, 1);
             this.button23.Margin = new System.Windows.Forms.Padding(1);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(69, 107);
+            this.button23.Size = new System.Drawing.Size(69, 133);
             this.button23.TabIndex = 0;
             this.button23.Text = "20 TL";
             this.button23.UseVisualStyleBackColor = false;
@@ -1014,110 +1113,39 @@ namespace Eyp_PaketServisv1._2
             this.UrunAdi});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(441, 636);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(440, 783);
             this.dataGridView1.TabIndex = 0;
             // 
             // ID
             // 
             this.ID.HeaderText = "Id";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.Visible = false;
+            this.ID.Width = 125;
             // 
             // UrunAdi
             // 
             this.UrunAdi.HeaderText = "Ürün Adı";
+            this.UrunAdi.MinimumWidth = 6;
             this.UrunAdi.Name = "UrunAdi";
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 1;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.dataGridFis, 0, 1);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 44);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 2;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.81081F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.18919F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(545, 481);
-            this.tableLayoutPanel9.TabIndex = 2;
-            this.tableLayoutPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel9_Paint);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(545, 52);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "# MASA -1";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // dataGridFis
-            // 
-            this.dataGridFis.AllowUserToOrderColumns = true;
-            this.dataGridFis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridFis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.UrunAdi1,
-            this.Miktar,
-            this.Fiyat,
-            this.Arttir,
-            this.Eksilt,
-            this.Sil});
-            this.dataGridFis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridFis.Location = new System.Drawing.Point(3, 55);
-            this.dataGridFis.Name = "dataGridFis";
-            this.dataGridFis.Size = new System.Drawing.Size(539, 423);
-            this.dataGridFis.TabIndex = 1;
-            // 
-            // UrunAdi1
-            // 
-            this.UrunAdi1.HeaderText = "Ürün Adı";
-            this.UrunAdi1.Name = "UrunAdi1";
-            // 
-            // Miktar
-            // 
-            this.Miktar.HeaderText = "Miktar";
-            this.Miktar.Name = "Miktar";
-            // 
-            // Fiyat
-            // 
-            this.Fiyat.HeaderText = "Fiyat";
-            this.Fiyat.Name = "Fiyat";
-            // 
-            // Arttir
-            // 
-            this.Arttir.HeaderText = "+";
-            this.Arttir.Name = "Arttir";
-            // 
-            // Eksilt
-            // 
-            this.Eksilt.HeaderText = "-";
-            this.Eksilt.Name = "Eksilt";
-            // 
-            // Sil
-            // 
-            this.Sil.HeaderText = "Sil X";
-            this.Sil.Name = "Sil";
+            this.UrunAdi.Width = 125;
             // 
             // fSiparis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1421, 636);
+            this.ClientSize = new System.Drawing.Size(1895, 783);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fSiparis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eyp-Paket Servis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.fSiparis_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -1133,6 +1161,9 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFis)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -1149,9 +1180,6 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridFis)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1198,11 +1226,11 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button btnTableChoose;
+        private System.Windows.Forms.Button btnCustomerShow;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button27;
@@ -1214,7 +1242,6 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn UrunAdi;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridFis;
         private System.Windows.Forms.DataGridViewTextBoxColumn UrunAdi1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Miktar;
@@ -1222,6 +1249,7 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.DataGridViewTextBoxColumn Arttir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Eksilt;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sil;
+        public System.Windows.Forms.Label lblCustomerName;
     }
 }
 

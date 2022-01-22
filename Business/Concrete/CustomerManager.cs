@@ -34,9 +34,9 @@ namespace Business.Concrete
             return _customerDal.GetAll(p => p.IsActive == true);
         }
 
-        public Customer GetById(string phone)
+        public Customer GetById(int id)
         {
-            return _customerDal.Get(c => c.Phone1 == phone);
+            return _customerDal.Get(c => c.CustomerId == id);
         }
 
         public void Update(Customer customer)

@@ -47,7 +47,7 @@ namespace Eyp_PaketServisv1._2
             Product product = new Product();
 
             product.ProductId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ProductId"].Value);
-            product.BarcodeNumber = txtBarcode.Text;
+            //product.BarcodeNumber = txtBarcode.Text;
             product.ProductName = txtProductName.Text;
             product.CategoryId = (int)cmbCategoryName.SelectedValue;
             product.PurchasePrice = Convert.ToDecimal(txtPurchasePrice.Text);
@@ -65,7 +65,7 @@ namespace Eyp_PaketServisv1._2
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtBarcode.Text = dataGridView1.CurrentRow.Cells["BarcodeNumber"].Value.ToString();
+            //txtBarcode.Text = dataGridView1.CurrentRow.Cells["BarcodeNumber"].Value.ToString();
             txtProductName.Text = dataGridView1.CurrentRow.Cells["ProductName"].Value.ToString();
             cmbCategoryName.Text = dataGridView1.CurrentRow.Cells["CategoryName"].Value.ToString();
             txtPurchasePrice.Text = dataGridView1.CurrentRow.Cells["PurchasePrice"].Value.ToString();

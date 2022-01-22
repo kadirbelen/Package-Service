@@ -95,6 +95,12 @@
     <Compile Include="f-Baslangic.Designer.cs">
       <DependentUpon>f-Baslangic.cs</DependentUpon>
     </Compile>
+    <Compile Include="f-CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f-CustomerList.Designer.cs">
+      <DependentUpon>f-CustomerList.cs</DependentUpon>
+    </Compile>
     <Compile Include="f-FiyatGüncelle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,11 +161,11 @@
     <Compile Include="fMusteriYok.Designer.cs">
       <DependentUpon>fMusteriYok.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="fSiparis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fSiparis.Designer.cs">
+      <DependentUpon>fSiparis.cs</DependentUpon>
     </Compile>
     <Compile Include="PackageServiceDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="f-Baslangic.resx">
       <DependentUpon>f-Baslangic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f-CustomerList.resx">
+      <DependentUpon>f-CustomerList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="f-FiyatGüncelle.resx">
       <DependentUpon>f-FiyatGüncelle.cs</DependentUpon>
@@ -217,8 +226,8 @@
     <EmbeddedResource Include="fMusteriYok.resx">
       <DependentUpon>fMusteriYok.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="fSiparis.resx">
+      <DependentUpon>fSiparis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductReport.rdlc" />
     <EmbeddedResource Include="ProductReport.resx">

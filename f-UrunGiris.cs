@@ -45,7 +45,7 @@ namespace Eyp_PaketServisv1._2
         private void btnProductAdd_Click(object sender, EventArgs e)
         {
             Product product = new Product();
-            product.BarcodeNumber = txtBarcode.Text.ToUpper().Trim();
+            //product.BarcodeNumber = txtBarcode.Text.ToUpper().Trim();
             product.ProductName = txtProductName.Text.ToUpper().Trim();
             product.Stock = Convert.ToInt32(txtStock.Text);
             product.CategoryId = (int)cmbCategoryName.SelectedValue;//buraya Id cekilecek

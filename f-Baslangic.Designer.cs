@@ -38,7 +38,7 @@ namespace Eyp_PaketServisv1._2
             this.button4 = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPacketServis = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel1.Controls.Add(this.button4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnStock, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnPacketServis, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 112);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -147,6 +147,7 @@ namespace Eyp_PaketServisv1._2
             this.button5.TabIndex = 4;
             this.button5.Text = "Ayarlar";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -195,20 +196,21 @@ namespace Eyp_PaketServisv1._2
             this.button2.Text = "Raporlar";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnPacketServis
             // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1, 1);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(269, 122);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Paket Servis";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPacketServis.BackColor = System.Drawing.Color.Tomato;
+            this.btnPacketServis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPacketServis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPacketServis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPacketServis.ForeColor = System.Drawing.Color.White;
+            this.btnPacketServis.Location = new System.Drawing.Point(1, 1);
+            this.btnPacketServis.Margin = new System.Windows.Forms.Padding(1);
+            this.btnPacketServis.Name = "btnPacketServis";
+            this.btnPacketServis.Size = new System.Drawing.Size(269, 122);
+            this.btnPacketServis.TabIndex = 0;
+            this.btnPacketServis.Text = "Paket Servis";
+            this.btnPacketServis.UseVisualStyleBackColor = false;
+            this.btnPacketServis.Click += new System.EventHandler(this.btnPacketServis_Click);
             // 
             // label1
             // 
@@ -281,7 +283,7 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPacketServis;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;

@@ -30,6 +30,11 @@ namespace Eyp_PaketServisv1._2
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.productDate = new System.Windows.Forms.DateTimePicker();
+            this.cmbCategoryName = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbVatRate = new System.Windows.Forms.ComboBox();
             this.btnUpdateProduct = new System.Windows.Forms.Button();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtSalePrice = new System.Windows.Forms.TextBox();
@@ -40,18 +45,11 @@ namespace Eyp_PaketServisv1._2
             this.label3 = new System.Windows.Forms.Label();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtBarcode = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.button1 = new System.Windows.Forms.Button();
             this.txtSearchProduct = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cmbVatRate = new System.Windows.Forms.ComboBox();
-            this.productDate = new System.Windows.Forms.DateTimePicker();
-            this.cmbCategoryName = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -87,8 +85,6 @@ namespace Eyp_PaketServisv1._2
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.txtProductName);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
-            this.splitContainer1.Panel1.Controls.Add(this.txtBarcode);
-            this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
@@ -97,6 +93,62 @@ namespace Eyp_PaketServisv1._2
             this.splitContainer1.SplitterDistance = 562;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // productDate
+            // 
+            this.productDate.Location = new System.Drawing.Point(231, 467);
+            this.productDate.Margin = new System.Windows.Forms.Padding(4);
+            this.productDate.Name = "productDate";
+            this.productDate.Size = new System.Drawing.Size(239, 22);
+            this.productDate.TabIndex = 28;
+            // 
+            // cmbCategoryName
+            // 
+            this.cmbCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbCategoryName.FormattingEnabled = true;
+            this.cmbCategoryName.Location = new System.Drawing.Point(231, 209);
+            this.cmbCategoryName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbCategoryName.Name = "cmbCategoryName";
+            this.cmbCategoryName.Size = new System.Drawing.Size(239, 30);
+            this.cmbCategoryName.TabIndex = 27;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label8.Location = new System.Drawing.Point(27, 467);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 25);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Tarih";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label9.Location = new System.Drawing.Point(19, 214);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 25);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Ürün Grubu";
+            // 
+            // cmbVatRate
+            // 
+            this.cmbVatRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbVatRate.FormattingEnabled = true;
+            this.cmbVatRate.Items.AddRange(new object[] {
+            "1",
+            "8",
+            "18"});
+            this.cmbVatRate.Location = new System.Drawing.Point(231, 411);
+            this.cmbVatRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbVatRate.Name = "cmbVatRate";
+            this.cmbVatRate.Size = new System.Drawing.Size(239, 30);
+            this.cmbVatRate.TabIndex = 24;
             // 
             // btnUpdateProduct
             // 
@@ -211,27 +263,6 @@ namespace Eyp_PaketServisv1._2
             this.label2.TabIndex = 15;
             this.label2.Text = "Ürün Adı";
             // 
-            // txtBarcode
-            // 
-            this.txtBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBarcode.Location = new System.Drawing.Point(231, 103);
-            this.txtBarcode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(239, 30);
-            this.txtBarcode.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(19, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Barkod";
-            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -297,68 +328,12 @@ namespace Eyp_PaketServisv1._2
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(821, 553);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // cmbVatRate
-            // 
-            this.cmbVatRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbVatRate.FormattingEnabled = true;
-            this.cmbVatRate.Items.AddRange(new object[] {
-            "1",
-            "8",
-            "18"});
-            this.cmbVatRate.Location = new System.Drawing.Point(231, 411);
-            this.cmbVatRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbVatRate.Name = "cmbVatRate";
-            this.cmbVatRate.Size = new System.Drawing.Size(239, 30);
-            this.cmbVatRate.TabIndex = 24;
-            // 
-            // productDate
-            // 
-            this.productDate.Location = new System.Drawing.Point(231, 467);
-            this.productDate.Margin = new System.Windows.Forms.Padding(4);
-            this.productDate.Name = "productDate";
-            this.productDate.Size = new System.Drawing.Size(239, 22);
-            this.productDate.TabIndex = 28;
-            // 
-            // cmbCategoryName
-            // 
-            this.cmbCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbCategoryName.FormattingEnabled = true;
-            this.cmbCategoryName.Location = new System.Drawing.Point(231, 209);
-            this.cmbCategoryName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbCategoryName.Name = "cmbCategoryName";
-            this.cmbCategoryName.Size = new System.Drawing.Size(239, 30);
-            this.cmbCategoryName.TabIndex = 27;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label8.Location = new System.Drawing.Point(27, 467);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 25);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Tarih";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label9.Location = new System.Drawing.Point(19, 214);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 25);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Ürün Grubu";
             // 
             // f_FiyatGüncelle
             // 
@@ -366,7 +341,7 @@ namespace Eyp_PaketServisv1._2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1388, 652);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "f_FiyatGüncelle";
             this.Text = "f_FiyatGüncelle";
             this.Load += new System.EventHandler(this.f_FiyatGüncelle_Load);
@@ -398,8 +373,6 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBarcode;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtSearchProduct;
