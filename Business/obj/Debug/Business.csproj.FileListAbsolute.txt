@@ -12,3 +12,17 @@ C:\Users\eyili\Source\Repos\Package-Service\Business\obj\Debug\Business.csproj.C
 C:\Users\eyili\Source\Repos\Package-Service\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\eyili\Source\Repos\Package-Service\Business\obj\Debug\Business.dll
 C:\Users\eyili\Source\Repos\Package-Service\Business\obj\Debug\Business.pdb
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\Business.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\Business.pdb
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\DataAccess.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\Entities.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\EntityFramework.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\DataAccess.pdb
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\DataAccess.dll.config
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\Entities.pdb
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\bin\Debug\EntityFramework.xml
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\obj\Debug\Business.csproj.AssemblyReference.cache
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\obj\Debug\Business.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\Business\obj\Debug\Business.pdb

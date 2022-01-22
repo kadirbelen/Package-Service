@@ -12,3 +12,17 @@ C:\Users\eyili\Source\Repos\Package-Service\DataAccess\obj\Debug\DataAccess.cspr
 C:\Users\eyili\Source\Repos\Package-Service\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
 C:\Users\eyili\Source\Repos\Package-Service\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\eyili\Source\Repos\Package-Service\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\Entities.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\Entities.pdb
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\DataAccess\obj\Debug\DataAccess.pdb
