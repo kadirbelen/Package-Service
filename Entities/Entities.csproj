@@ -41,10 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\Address.cs" />
     <Compile Include="Concrete\Category.cs" />
     <Compile Include="Concrete\Customer.cs" />
-    <Compile Include="Concrete\Phone.cs" />
     <Compile Include="Concrete\Product.cs" />
     <Compile Include="DTOs\ProductOrCategoryDetails.cs" />
     <Compile Include="DTOs\ProductStockShow.cs" />
