@@ -1,7 +1,7 @@
 ﻿
 namespace Eyp_PaketServisv1._2
 {
-    partial class ProductStockReportShow
+    partial class ProductStockReport
     {
         /// <summary>
         /// Required designer variable.
@@ -33,17 +33,17 @@ namespace Eyp_PaketServisv1._2
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.PackageServiceDBDataSet = new Eyp_PaketServisv1._2.PackageServiceDBDataSet();
-            this.StockShowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.StockShowTableAdapter = new Eyp_PaketServisv1._2.PackageServiceDBDataSetTableAdapters.StockShowTableAdapter();
+            this.ProductStocReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ProductStocReportsTableAdapter = new Eyp_PaketServisv1._2.PackageServiceDBDataSetTableAdapters.ProductStocReportsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.PackageServiceDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StockShowBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductStocReportsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.StockShowBindingSource;
+            reportDataSource1.Name = "ProductStock1";
+            reportDataSource1.Value = this.ProductStocReportsBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Eyp_PaketServisv1._2.ProductStockReport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
@@ -57,26 +57,26 @@ namespace Eyp_PaketServisv1._2
             this.PackageServiceDBDataSet.DataSetName = "PackageServiceDBDataSet";
             this.PackageServiceDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // StockShowBindingSource
+            // ProductStocReportsBindingSource
             // 
-            this.StockShowBindingSource.DataMember = "StockShow";
-            this.StockShowBindingSource.DataSource = this.PackageServiceDBDataSet;
+            this.ProductStocReportsBindingSource.DataMember = "ProductStocReports";
+            this.ProductStocReportsBindingSource.DataSource = this.PackageServiceDBDataSet;
             // 
-            // StockShowTableAdapter
+            // ProductStocReportsTableAdapter
             // 
-            this.StockShowTableAdapter.ClearBeforeFill = true;
+            this.ProductStocReportsTableAdapter.ClearBeforeFill = true;
             // 
-            // ProductStockShow
+            // ProductStockReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "ProductStockShow";
-            this.Text = "ProductStockShow";
-            this.Load += new System.EventHandler(this.ProductStockShow_Load);
+            this.Name = "ProductStockReport";
+            this.Text = "ProductStockReport";
+            this.Load += new System.EventHandler(this.ProductStockReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PackageServiceDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StockShowBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductStocReportsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,8 +84,8 @@ namespace Eyp_PaketServisv1._2
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource StockShowBindingSource;
+        private System.Windows.Forms.BindingSource ProductStocReportsBindingSource;
         private PackageServiceDBDataSet PackageServiceDBDataSet;
-        private PackageServiceDBDataSetTableAdapters.StockShowTableAdapter StockShowTableAdapter;
+        private PackageServiceDBDataSetTableAdapters.ProductStocReportsTableAdapter ProductStocReportsTableAdapter;
     }
 }

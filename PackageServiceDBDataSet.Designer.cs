@@ -34,7 +34,7 @@ namespace Eyp_PaketServisv1._2 {
         
         private ProductSalesDataTable tableProductSales;
         
-        private StockShowDataTable tableStockShow;
+        private ProductStocReportsDataTable tableProductStocReports;
         
         private global::System.Data.DataRelation relationFK_Products_Categories;
         
@@ -87,8 +87,8 @@ namespace Eyp_PaketServisv1._2 {
                 if ((ds.Tables["ProductSales"] != null)) {
                     base.Tables.Add(new ProductSalesDataTable(ds.Tables["ProductSales"]));
                 }
-                if ((ds.Tables["StockShow"] != null)) {
-                    base.Tables.Add(new StockShowDataTable(ds.Tables["StockShow"]));
+                if ((ds.Tables["ProductStocReports"] != null)) {
+                    base.Tables.Add(new ProductStocReportsDataTable(ds.Tables["ProductStocReports"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -162,9 +162,9 @@ namespace Eyp_PaketServisv1._2 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public StockShowDataTable StockShow {
+        public ProductStocReportsDataTable ProductStocReports {
             get {
-                return this.tableStockShow;
+                return this.tableProductStocReports;
             }
         }
         
@@ -250,8 +250,8 @@ namespace Eyp_PaketServisv1._2 {
                 if ((ds.Tables["ProductSales"] != null)) {
                     base.Tables.Add(new ProductSalesDataTable(ds.Tables["ProductSales"]));
                 }
-                if ((ds.Tables["StockShow"] != null)) {
-                    base.Tables.Add(new StockShowDataTable(ds.Tables["StockShow"]));
+                if ((ds.Tables["ProductStocReports"] != null)) {
+                    base.Tables.Add(new ProductStocReportsDataTable(ds.Tables["ProductStocReports"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -316,10 +316,10 @@ namespace Eyp_PaketServisv1._2 {
                     this.tableProductSales.InitVars();
                 }
             }
-            this.tableStockShow = ((StockShowDataTable)(base.Tables["StockShow"]));
+            this.tableProductStocReports = ((ProductStocReportsDataTable)(base.Tables["ProductStocReports"]));
             if ((initTable == true)) {
-                if ((this.tableStockShow != null)) {
-                    this.tableStockShow.InitVars();
+                if ((this.tableProductStocReports != null)) {
+                    this.tableProductStocReports.InitVars();
                 }
             }
             this.relationFK_Products_Categories = this.Relations["FK_Products_Categories"];
@@ -346,8 +346,8 @@ namespace Eyp_PaketServisv1._2 {
             base.Tables.Add(this.tableProducts);
             this.tableProductSales = new ProductSalesDataTable();
             base.Tables.Add(this.tableProductSales);
-            this.tableStockShow = new StockShowDataTable();
-            base.Tables.Add(this.tableStockShow);
+            this.tableProductStocReports = new ProductStocReportsDataTable();
+            base.Tables.Add(this.tableProductStocReports);
             this.relationFK_Products_Categories = new global::System.Data.DataRelation("FK_Products_Categories", new global::System.Data.DataColumn[] {
                         this.tableCategories.CategoryIdColumn}, new global::System.Data.DataColumn[] {
                         this.tableProducts.CategoryIdColumn}, false);
@@ -398,7 +398,7 @@ namespace Eyp_PaketServisv1._2 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeStockShow() {
+        private bool ShouldSerializeProductStocReports() {
             return false;
         }
         
@@ -473,7 +473,7 @@ namespace Eyp_PaketServisv1._2 {
         public delegate void ProductSalesRowChangeEventHandler(object sender, ProductSalesRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void StockShowRowChangeEventHandler(object sender, StockShowRowChangeEvent e);
+        public delegate void ProductStocReportsRowChangeEventHandler(object sender, ProductStocReportsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2280,22 +2280,20 @@ namespace Eyp_PaketServisv1._2 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class StockShowDataTable : global::System.Data.TypedTableBase<StockShowRow> {
-            
-            private global::System.Data.DataColumn columnProductId;
+        public partial class ProductStocReportsDataTable : global::System.Data.TypedTableBase<ProductStocReportsRow> {
             
             private global::System.Data.DataColumn columnProductName;
             
-            private global::System.Data.DataColumn columnCategoryName;
-            
             private global::System.Data.DataColumn columnStock;
+            
+            private global::System.Data.DataColumn columnCategoryName;
             
             private global::System.Data.DataColumn columnProductDate;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StockShowDataTable() {
-                this.TableName = "StockShow";
+            public ProductStocReportsDataTable() {
+                this.TableName = "ProductStocReports";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2303,7 +2301,7 @@ namespace Eyp_PaketServisv1._2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal StockShowDataTable(global::System.Data.DataTable table) {
+            internal ProductStocReportsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2320,17 +2318,9 @@ namespace Eyp_PaketServisv1._2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected StockShowDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ProductStocReportsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ProductIdColumn {
-                get {
-                    return this.columnProductId;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2343,17 +2333,17 @@ namespace Eyp_PaketServisv1._2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn CategoryNameColumn {
+            public global::System.Data.DataColumn StockColumn {
                 get {
-                    return this.columnCategoryName;
+                    return this.columnStock;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn StockColumn {
+            public global::System.Data.DataColumn CategoryNameColumn {
                 get {
-                    return this.columnStock;
+                    return this.columnCategoryName;
                 }
             }
             
@@ -2376,56 +2366,48 @@ namespace Eyp_PaketServisv1._2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StockShowRow this[int index] {
+            public ProductStocReportsRow this[int index] {
                 get {
-                    return ((StockShowRow)(this.Rows[index]));
+                    return ((ProductStocReportsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event StockShowRowChangeEventHandler StockShowRowChanging;
+            public event ProductStocReportsRowChangeEventHandler ProductStocReportsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event StockShowRowChangeEventHandler StockShowRowChanged;
+            public event ProductStocReportsRowChangeEventHandler ProductStocReportsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event StockShowRowChangeEventHandler StockShowRowDeleting;
+            public event ProductStocReportsRowChangeEventHandler ProductStocReportsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event StockShowRowChangeEventHandler StockShowRowDeleted;
+            public event ProductStocReportsRowChangeEventHandler ProductStocReportsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddStockShowRow(StockShowRow row) {
+            public void AddProductStocReportsRow(ProductStocReportsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StockShowRow AddStockShowRow(int ProductId, string ProductName, string CategoryName, int Stock, System.DateTime ProductDate) {
-                StockShowRow rowStockShowRow = ((StockShowRow)(this.NewRow()));
+            public ProductStocReportsRow AddProductStocReportsRow(string ProductName, int Stock, string CategoryName, System.DateTime ProductDate) {
+                ProductStocReportsRow rowProductStocReportsRow = ((ProductStocReportsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ProductId,
                         ProductName,
-                        CategoryName,
                         Stock,
+                        CategoryName,
                         ProductDate};
-                rowStockShowRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowStockShowRow);
-                return rowStockShowRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StockShowRow FindByProductId(int ProductId) {
-                return ((StockShowRow)(this.Rows.Find(new object[] {
-                            ProductId})));
+                rowProductStocReportsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowProductStocReportsRow);
+                return rowProductStocReportsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                StockShowDataTable cln = ((StockShowDataTable)(base.Clone()));
+                ProductStocReportsDataTable cln = ((ProductStocReportsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -2433,68 +2415,61 @@ namespace Eyp_PaketServisv1._2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new StockShowDataTable();
+                return new ProductStocReportsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnProductId = base.Columns["ProductId"];
                 this.columnProductName = base.Columns["ProductName"];
-                this.columnCategoryName = base.Columns["CategoryName"];
                 this.columnStock = base.Columns["Stock"];
+                this.columnCategoryName = base.Columns["CategoryName"];
                 this.columnProductDate = base.Columns["ProductDate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnProductId = new global::System.Data.DataColumn("ProductId", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProductId);
                 this.columnProductName = new global::System.Data.DataColumn("ProductName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProductName);
-                this.columnCategoryName = new global::System.Data.DataColumn("CategoryName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCategoryName);
                 this.columnStock = new global::System.Data.DataColumn("Stock", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStock);
+                this.columnCategoryName = new global::System.Data.DataColumn("CategoryName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCategoryName);
                 this.columnProductDate = new global::System.Data.DataColumn("ProductDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProductDate);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnProductId}, true));
-                this.columnProductId.AllowDBNull = false;
-                this.columnProductId.Unique = true;
                 this.columnProductName.AllowDBNull = false;
                 this.columnProductName.MaxLength = 50;
+                this.columnStock.AllowDBNull = false;
                 this.columnCategoryName.AllowDBNull = false;
                 this.columnCategoryName.MaxLength = 50;
-                this.columnStock.AllowDBNull = false;
                 this.columnProductDate.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StockShowRow NewStockShowRow() {
-                return ((StockShowRow)(this.NewRow()));
+            public ProductStocReportsRow NewProductStocReportsRow() {
+                return ((ProductStocReportsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new StockShowRow(builder);
+                return new ProductStocReportsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(StockShowRow);
+                return typeof(ProductStocReportsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.StockShowRowChanged != null)) {
-                    this.StockShowRowChanged(this, new StockShowRowChangeEvent(((StockShowRow)(e.Row)), e.Action));
+                if ((this.ProductStocReportsRowChanged != null)) {
+                    this.ProductStocReportsRowChanged(this, new ProductStocReportsRowChangeEvent(((ProductStocReportsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2502,8 +2477,8 @@ namespace Eyp_PaketServisv1._2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.StockShowRowChanging != null)) {
-                    this.StockShowRowChanging(this, new StockShowRowChangeEvent(((StockShowRow)(e.Row)), e.Action));
+                if ((this.ProductStocReportsRowChanging != null)) {
+                    this.ProductStocReportsRowChanging(this, new ProductStocReportsRowChangeEvent(((ProductStocReportsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2511,8 +2486,8 @@ namespace Eyp_PaketServisv1._2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.StockShowRowDeleted != null)) {
-                    this.StockShowRowDeleted(this, new StockShowRowChangeEvent(((StockShowRow)(e.Row)), e.Action));
+                if ((this.ProductStocReportsRowDeleted != null)) {
+                    this.ProductStocReportsRowDeleted(this, new ProductStocReportsRowChangeEvent(((ProductStocReportsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2520,14 +2495,14 @@ namespace Eyp_PaketServisv1._2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.StockShowRowDeleting != null)) {
-                    this.StockShowRowDeleting(this, new StockShowRowChangeEvent(((StockShowRow)(e.Row)), e.Action));
+                if ((this.ProductStocReportsRowDeleting != null)) {
+                    this.ProductStocReportsRowDeleting(this, new ProductStocReportsRowChangeEvent(((ProductStocReportsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveStockShowRow(StockShowRow row) {
+            public void RemoveProductStocReportsRow(ProductStocReportsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2554,7 +2529,7 @@ namespace Eyp_PaketServisv1._2 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "StockShowDataTable";
+                attribute2.FixedValue = "ProductStocReportsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -3440,47 +3415,25 @@ namespace Eyp_PaketServisv1._2 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class StockShowRow : global::System.Data.DataRow {
+        public partial class ProductStocReportsRow : global::System.Data.DataRow {
             
-            private StockShowDataTable tableStockShow;
+            private ProductStocReportsDataTable tableProductStocReports;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal StockShowRow(global::System.Data.DataRowBuilder rb) : 
+            internal ProductStocReportsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableStockShow = ((StockShowDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int ProductId {
-                get {
-                    return ((int)(this[this.tableStockShow.ProductIdColumn]));
-                }
-                set {
-                    this[this.tableStockShow.ProductIdColumn] = value;
-                }
+                this.tableProductStocReports = ((ProductStocReportsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string ProductName {
                 get {
-                    return ((string)(this[this.tableStockShow.ProductNameColumn]));
+                    return ((string)(this[this.tableProductStocReports.ProductNameColumn]));
                 }
                 set {
-                    this[this.tableStockShow.ProductNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string CategoryName {
-                get {
-                    return ((string)(this[this.tableStockShow.CategoryNameColumn]));
-                }
-                set {
-                    this[this.tableStockShow.CategoryNameColumn] = value;
+                    this[this.tableProductStocReports.ProductNameColumn] = value;
                 }
             }
             
@@ -3488,10 +3441,21 @@ namespace Eyp_PaketServisv1._2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int Stock {
                 get {
-                    return ((int)(this[this.tableStockShow.StockColumn]));
+                    return ((int)(this[this.tableProductStocReports.StockColumn]));
                 }
                 set {
-                    this[this.tableStockShow.StockColumn] = value;
+                    this[this.tableProductStocReports.StockColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CategoryName {
+                get {
+                    return ((string)(this[this.tableProductStocReports.CategoryNameColumn]));
+                }
+                set {
+                    this[this.tableProductStocReports.CategoryNameColumn] = value;
                 }
             }
             
@@ -3499,10 +3463,10 @@ namespace Eyp_PaketServisv1._2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public System.DateTime ProductDate {
                 get {
-                    return ((global::System.DateTime)(this[this.tableStockShow.ProductDateColumn]));
+                    return ((global::System.DateTime)(this[this.tableProductStocReports.ProductDateColumn]));
                 }
                 set {
-                    this[this.tableStockShow.ProductDateColumn] = value;
+                    this[this.tableProductStocReports.ProductDateColumn] = value;
                 }
             }
         }
@@ -3681,22 +3645,22 @@ namespace Eyp_PaketServisv1._2 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class StockShowRowChangeEvent : global::System.EventArgs {
+        public class ProductStocReportsRowChangeEvent : global::System.EventArgs {
             
-            private StockShowRow eventRow;
+            private ProductStocReportsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StockShowRowChangeEvent(StockShowRow row, global::System.Data.DataRowAction action) {
+            public ProductStocReportsRowChangeEvent(ProductStocReportsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StockShowRow Row {
+            public ProductStocReportsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -6134,7 +6098,7 @@ SELECT ProductSaleId, ProductId, CustomerId, PaymentTypeId, SellTime, Unit, Disc
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class StockShowTableAdapter : global::System.ComponentModel.Component {
+    public partial class ProductStocReportsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -6148,7 +6112,7 @@ SELECT ProductSaleId, ProductId, CustomerId, PaymentTypeId, SellTime, Unit, Disc
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public StockShowTableAdapter() {
+        public ProductStocReportsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -6245,11 +6209,10 @@ SELECT ProductSaleId, ProductId, CustomerId, PaymentTypeId, SellTime, Unit, Disc
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "StockShow";
-            tableMapping.ColumnMappings.Add("ProductId", "ProductId");
+            tableMapping.DataSetTable = "ProductStocReports";
             tableMapping.ColumnMappings.Add("ProductName", "ProductName");
-            tableMapping.ColumnMappings.Add("CategoryName", "CategoryName");
             tableMapping.ColumnMappings.Add("Stock", "Stock");
+            tableMapping.ColumnMappings.Add("CategoryName", "CategoryName");
             tableMapping.ColumnMappings.Add("ProductDate", "ProductDate");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -6267,17 +6230,23 @@ SELECT ProductSaleId, ProductId, CustomerId, PaymentTypeId, SellTime, Unit, Disc
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ProductId, ProductName, CategoryName, Stock, ProductDate FROM dbo.StockSho" +
-                "w";
+            this._commandCollection[0].CommandText = "SELECT p.ProductName, p.Stock, c.CategoryName, p.ProductDate\r\nFROM     Products A" +
+                "S p INNER JOIN\r\n                  Categories AS c ON p.CategoryId = c.CategoryId" +
+                "\r\nWHERE  (p.IsActive = 1) AND (p.ProductDate >= @datetime1) AND (p.ProductDate <" +
+                "= @datetime2)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@datetime1", global::System.Data.SqlDbType.DateTime, 3, global::System.Data.ParameterDirection.Input, 0, 0, "ProductDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@datetime2", global::System.Data.SqlDbType.DateTime, 3, global::System.Data.ParameterDirection.Input, 0, 0, "ProductDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PackageServiceDBDataSet.StockShowDataTable dataTable) {
+        public virtual int Fill(PackageServiceDBDataSet.ProductStocReportsDataTable dataTable, System.DateTime datetime1, System.DateTime datetime2) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(datetime1));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(datetime2));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -6289,9 +6258,11 @@ SELECT ProductSaleId, ProductId, CustomerId, PaymentTypeId, SellTime, Unit, Disc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PackageServiceDBDataSet.StockShowDataTable GetData() {
+        public virtual PackageServiceDBDataSet.ProductStocReportsDataTable GetData(System.DateTime datetime1, System.DateTime datetime2) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PackageServiceDBDataSet.StockShowDataTable dataTable = new PackageServiceDBDataSet.StockShowDataTable();
+            this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(datetime1));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(datetime2));
+            PackageServiceDBDataSet.ProductStocReportsDataTable dataTable = new PackageServiceDBDataSet.ProductStocReportsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

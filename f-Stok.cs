@@ -57,7 +57,7 @@ namespace Eyp_PaketServisv1._2
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ProductStockReportShow productStockReport = new ProductStockReportShow();
+            ProductStockReport productStockReport = new ProductStockReport();
             productStockReport.ShowDialog();
         }
     }
