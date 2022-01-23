@@ -82,7 +82,6 @@ C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.fMust
 C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.fMusteriYok.resources
 C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.fSiparis.resources
 C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.ProductReport.resources
-C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.ProductStockReportShow.resources
 C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.Properties.Resources.resources
 C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp-PaketServisv1.2.csproj.GenerateResource.cache
 C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp-PaketServisv1.2.csproj.CoreCompileInputs.cache
@@ -189,3 +188,5 @@ C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\obj\Debug\Eyp-PaketServisv1.2.ex
 C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\obj\Debug\Eyp-PaketServisv1.2.pdb
 C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\obj\Debug\Eyp_PaketServisv1._2.f_CustomerList.resources
 C:\Users\NATRO\source\repos\Eyp-PaketServisv1.2\obj\Debug\Eyp_PaketServisv1._2.ProductStockReport.resources
+C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.f_CustomerList.resources
+C:\Users\eyili\Source\Repos\Package-Service\obj\Debug\Eyp_PaketServisv1._2.ProductStockReport.resources
