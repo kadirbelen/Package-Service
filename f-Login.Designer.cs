@@ -74,7 +74,7 @@ namespace Eyp_PaketServisv1._2
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(193, 172);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(237, 33);
             this.comboBox1.TabIndex = 13;
@@ -87,13 +87,13 @@ namespace Eyp_PaketServisv1._2
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(476, 170);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 84);
             this.button1.TabIndex = 14;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
-
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // f_Login
             // 
@@ -106,7 +106,7 @@ namespace Eyp_PaketServisv1._2
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "f_Login";
             this.Text = "f_Login";
             this.Load += new System.EventHandler(this.f_Login_Load);
