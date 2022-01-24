@@ -19,7 +19,7 @@ namespace Eyp_PaketServisv1._2
 
         private void f_Login_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("kadir belen");
+            MessageBox.Show("kadir belen değil Hakkı EYİLİK");
         }
 
         private void button1_Click(object sender, EventArgs e)
