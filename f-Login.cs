@@ -19,7 +19,8 @@ namespace Eyp_PaketServisv1._2
 
         private void f_Login_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Test");
+            MessageBox.Show("Test");
         }
     }
 }
