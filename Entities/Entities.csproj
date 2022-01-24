@@ -44,6 +44,7 @@
     <Compile Include="Concrete\Category.cs" />
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="Concrete\Product.cs" />
+    <Compile Include="DTOs\ProductNameGet.cs" />
     <Compile Include="DTOs\ProductOrCategoryDetails.cs" />
     <Compile Include="DTOs\ProductStockShow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

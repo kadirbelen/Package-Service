@@ -11,17 +11,17 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, PackageServiceDbContext>, IProductDal
     {
-        public List<Product> GetListCategoryId(int categoryId)
+        public List<ProductNameGet> GetListCategoryId(int categoryId)
         {
             using (PackageServiceDbContext context = new PackageServiceDbContext())
             {
                 var result = from p in context.Products
                              where p.IsActive == true && p.CategoryId==categoryId
-                             select new Product
+                             select new ProductNameGet
                              {
-                                 
+                                 ProductId=p.ProductId,
                                  ProductName = p.ProductName,
-                                
+
                              };
                 return result.ToList();
             }
