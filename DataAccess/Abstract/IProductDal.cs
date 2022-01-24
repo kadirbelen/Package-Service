@@ -10,6 +10,7 @@ namespace DataAccess.Abstract
     {
         List<ProductOrCategoryDetails> GetProductOrCategoryDetails();
         List<ProductStockShow> GetProductStockShows();
+        List<Product> GetListCategoryId(int categoryId);
     }
 }
 

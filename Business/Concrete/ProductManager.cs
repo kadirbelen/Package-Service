@@ -64,7 +64,11 @@ namespace Business.Concrete
         {
             return _productDal.GetProductStockShows().Where(p => p.ProductDate > dateTime1 & p.ProductDate < dateTime2).ToList();
         }
-        
-      
+
+        public List<Product> GetByIdList(int categoryId)
+        {
+            return _productDal.GetListCategoryId(categoryId);
+
+        }
     }
 }

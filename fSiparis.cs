@@ -20,6 +20,7 @@ namespace Eyp_PaketServisv1._2
             InitializeComponent();
         }
         CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+        ProductManager productManager = new ProductManager(new EfProductDal());
         public int CustomerId;
         private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
         {
@@ -41,6 +42,17 @@ namespace Eyp_PaketServisv1._2
         private void btnClear_Click(object sender, EventArgs e)
         {
             MessageBox.Show("id:"+CustomerId.ToString());
+        }
+
+        private void btnDrink_Click(object sender, EventArgs e)
+        {
+            var result = productManager.GetByIdList(2);
+            dataGridView1.DataSource = result;
+
+
+          
+            
+
         }
     }
 }

@@ -11,6 +11,22 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, PackageServiceDbContext>, IProductDal
     {
+        public List<Product> GetListCategoryId(int categoryId)
+        {
+            using (PackageServiceDbContext context = new PackageServiceDbContext())
+            {
+                var result = from p in context.Products
+                             where p.IsActive == true && p.CategoryId==categoryId
+                             select new Product
+                             {
+                                 
+                                 ProductName = p.ProductName,
+                                
+                             };
+                return result.ToList();
+            }
+        }
+
         public List<ProductOrCategoryDetails> GetProductOrCategoryDetails()
         {
 
