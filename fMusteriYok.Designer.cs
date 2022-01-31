@@ -274,7 +274,6 @@ namespace Eyp_PaketServisv1._2
         #endregion
 
         private System.Windows.Forms.MaskedTextBox txtPhone2;
-        private System.Windows.Forms.MaskedTextBox txtPhone1;
         private System.Windows.Forms.RichTextBox txtAddress1;
         private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label label15;
@@ -290,5 +289,6 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.RichTextBox txtCustomerNote;
         private System.Windows.Forms.TextBox txtCustomerSurname;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.MaskedTextBox txtPhone1;
     }
 }

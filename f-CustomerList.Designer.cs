@@ -49,6 +49,7 @@ namespace Eyp_PaketServisv1._2
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(800, 450);
             this.dataGridView1.TabIndex = 0;
+           
             // 
             // contextMenuStrip1
             // 
@@ -57,19 +58,19 @@ namespace Eyp_PaketServisv1._2
             this.yenileToolStripMenuItem,
             this.müşteriSeçToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 80);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(155, 52);
             // 
             // yenileToolStripMenuItem
             // 
             this.yenileToolStripMenuItem.Name = "yenileToolStripMenuItem";
-            this.yenileToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.yenileToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
             this.yenileToolStripMenuItem.Text = "Yenile";
             this.yenileToolStripMenuItem.Click += new System.EventHandler(this.yenileToolStripMenuItem_Click);
             // 
             // müşteriSeçToolStripMenuItem
             // 
             this.müşteriSeçToolStripMenuItem.Name = "müşteriSeçToolStripMenuItem";
-            this.müşteriSeçToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.müşteriSeçToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
             this.müşteriSeçToolStripMenuItem.Text = "Müşteri Seç";
             this.müşteriSeçToolStripMenuItem.Click += new System.EventHandler(this.müşteriSeçToolStripMenuItem_Click);
             // 

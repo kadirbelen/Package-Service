@@ -39,6 +39,11 @@ namespace Business.Concrete
             return _customerDal.Get(c => c.CustomerId == id);
         }
 
+        public Customer GetPhoneCustomerList(string phone)
+        {
+            return _customerDal.Get(p => p.Phone1 == phone || p.Phone2==phone);
+        }
+
         public void Update(Customer customer)
         {
             _customerDal.Update(customer);

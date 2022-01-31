@@ -25,9 +25,7 @@ namespace Eyp_PaketServisv1._2
         {
            
             List();
-            
-
-
+ 
 
             var categoryList = categoryManager.GetAll();
             cmbCategoryName.DataSource = categoryList;

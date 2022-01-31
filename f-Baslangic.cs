@@ -1,4 +1,5 @@
 ﻿using DataAccess.Concrete;
+using Eyp_PaketServisv1._2.CallerIdEntegre;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -63,14 +64,21 @@ namespace Eyp_PaketServisv1._2
 
         private void btnPacketServis_Click(object sender, EventArgs e)
         {
-            fSiparis fSiparis = new fSiparis();
-            fSiparis.ShowDialog();
+            FormSiparis fSiparis = new FormSiparis();
+            fSiparis.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnAyarlar_Click(object sender, EventArgs e)
         {
-            fMusteriYok fMusteriYok = new fMusteriYok();
-            fMusteriYok.ShowDialog();
+            f_Ayarlar ayarlar = new f_Ayarlar();
+            ayarlar.ShowDialog();
+        }
+
+        private void btnUserChange_Click(object sender, EventArgs e)
+        {
+            f_Login login = new f_Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

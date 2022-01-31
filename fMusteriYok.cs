@@ -35,6 +35,7 @@ namespace Eyp_PaketServisv1._2
 
             customerManager.Add(customer);
             MessageBox.Show("Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            this.Hide();
         }
     }
 }

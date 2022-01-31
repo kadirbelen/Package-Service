@@ -19,7 +19,7 @@ namespace Eyp_PaketServisv1._2
             InitializeComponent();
         }
         CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
-        fSiparis fSiparis = (fSiparis)Application.OpenForms["fSiparis"];
+        FormSiparis f1siparis = (FormSiparis)Application.OpenForms["FormSiparis"];
         private void f_CustomerList_Load(object sender, EventArgs e)
         {
              dataGridView1.DataSource=customerManager.GetAll();
@@ -34,8 +34,10 @@ namespace Eyp_PaketServisv1._2
         {
             var id=dataGridView1.CurrentRow.Cells["CustomerId"].Value;
             var result =customerManager.GetById(Convert.ToInt32(id));
-            fSiparis.lblCustomerName.Text = result.Name+" "+result.Surname+" "+result.Phone1;
-            fSiparis.CustomerId = Convert.ToInt32(id);
+            f1siparis.lblCustomerName.Text = result.Name+" "+result.Surname+" "+result.Phone1;
+            f1siparis.CustomerId = Convert.ToInt32(id);
         }
+
+      
     }
 }

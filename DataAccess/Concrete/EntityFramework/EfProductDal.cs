@@ -65,6 +65,7 @@ namespace DataAccess.Concrete.EntityFramework
                              select new ProductStockShow
                              {
                                  ProductId = p.ProductId,
+                                 CategoryId=c.CategoryId,
                                  ProductName = p.ProductName,
                                  CategoryName = c.CategoryName,
                                  Stock = p.Stock,

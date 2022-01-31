@@ -19,6 +19,7 @@ namespace Business.Abstract
         List<ProductOrCategoryDetails> GetProductSearch(string key);
         List<ProductStockShow> GetProductStockSearch(string key);
         List<ProductStockShow> GetProductSearchDate(DateTime dateTime1, DateTime dateTime2);
+        List<ProductStockShow> GetProductStockCategoryId(DateTime dateTime1, DateTime dateTime2,int categoryId);
 
     }
 }

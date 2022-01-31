@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,18 @@ namespace Eyp_PaketServisv1._2
         public f_SiparisListesi()
         {
             InitializeComponent();
+        }
+        OrderManager orderManager = new OrderManager(new EfOrderDal());
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var result = orderManager.GetCustomerPhoneList(mskPhone.Text);
+            dataGridView1.DataSource = result;
+            
+        }
+
+        private void f_SiparisListesi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

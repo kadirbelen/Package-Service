@@ -29,11 +29,11 @@ namespace Eyp_PaketServisv1._2
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -47,22 +47,25 @@ namespace Eyp_PaketServisv1._2
             this.txtAddress1 = new System.Windows.Forms.RichTextBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtCustomerId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOk
             // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(388, 550);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Onayla";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnOk.BackColor = System.Drawing.Color.Tomato;
+            this.btnOk.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOk.ForeColor = System.Drawing.Color.White;
+            this.btnOk.Location = new System.Drawing.Point(388, 550);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(183, 64);
+            this.btnOk.TabIndex = 0;
+            this.btnOk.Text = "Onayla";
+            this.btnOk.UseVisualStyleBackColor = false;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // label1
             // 
@@ -100,20 +103,21 @@ namespace Eyp_PaketServisv1._2
             this.label5.TabIndex = 1;
             this.label5.Text = "Tlf-2";
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.BackColor = System.Drawing.Color.YellowGreen;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(57, 550);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 64);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Güncelle";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(57, 550);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(183, 64);
+            this.btnUpdate.TabIndex = 0;
+            this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // checkBox1
             // 
@@ -256,11 +260,36 @@ namespace Eyp_PaketServisv1._2
             this.label2.TabIndex = 31;
             this.label2.Text = "Soyad";
             // 
+            // txtCustomerId
+            // 
+            this.txtCustomerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCustomerId.Location = new System.Drawing.Point(230, 14);
+            this.txtCustomerId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCustomerId.Name = "txtCustomerId";
+            this.txtCustomerId.Size = new System.Drawing.Size(181, 28);
+            this.txtCustomerId.TabIndex = 33;
+            this.txtCustomerId.Visible = false;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblId.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblId.Location = new System.Drawing.Point(16, 17);
+            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(28, 25);
+            this.lblId.TabIndex = 32;
+            this.lblId.Text = "Id";
+            this.lblId.Visible = false;
+            // 
             // fMusteriVar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(643, 619);
+            this.Controls.Add(this.txtCustomerId);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCustomerSurname);
             this.Controls.Add(this.txtPhone2);
@@ -277,8 +306,8 @@ namespace Eyp_PaketServisv1._2
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnOk);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(661, 666);
             this.MinimumSize = new System.Drawing.Size(661, 666);
@@ -293,23 +322,25 @@ namespace Eyp_PaketServisv1._2
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtCustomerSurname;
-        private System.Windows.Forms.MaskedTextBox txtPhone2;
-        private System.Windows.Forms.MaskedTextBox txtPhone1;
-        private System.Windows.Forms.RichTextBox txtCustomerNote;
-        private System.Windows.Forms.RichTextBox txtAddress3;
-        private System.Windows.Forms.RichTextBox txtAddress2;
-        private System.Windows.Forms.RichTextBox txtAddress1;
-        private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtCustomerSurname;
+        public System.Windows.Forms.MaskedTextBox txtPhone2;
+        public System.Windows.Forms.MaskedTextBox txtPhone1;
+        public System.Windows.Forms.RichTextBox txtCustomerNote;
+        public System.Windows.Forms.RichTextBox txtAddress3;
+        public System.Windows.Forms.RichTextBox txtAddress2;
+        public System.Windows.Forms.RichTextBox txtAddress1;
+        public System.Windows.Forms.TextBox txtCustomerName;
+        public System.Windows.Forms.TextBox txtCustomerId;
+        private System.Windows.Forms.Label lblId;
     }
 }

@@ -48,8 +48,9 @@ namespace Eyp_PaketServisv1._2
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.cmbCategoryList = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -231,11 +232,11 @@ namespace Eyp_PaketServisv1._2
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.groupBox1.Location = new System.Drawing.Point(16, 65);
+            this.groupBox1.Location = new System.Drawing.Point(20, 75);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(267, 193);
+            this.groupBox1.Size = new System.Drawing.Size(267, 183);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtreleme Türü";
@@ -289,6 +290,7 @@ namespace Eyp_PaketServisv1._2
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.listBox1);
             this.splitContainer1.Panel1.Controls.Add(this.button7);
             this.splitContainer1.Panel1.Controls.Add(this.btnShow);
             this.splitContainer1.Panel1.Controls.Add(this.groupBox3);
@@ -305,9 +307,22 @@ namespace Eyp_PaketServisv1._2
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "Tümü",
+            "Ürün Grubu"});
+            this.listBox1.Location = new System.Drawing.Point(20, 265);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(267, 84);
+            this.listBox1.TabIndex = 14;
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkedListBox1);
+            this.groupBox3.Controls.Add(this.cmbCategoryList);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -320,16 +335,13 @@ namespace Eyp_PaketServisv1._2
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ürün Grubu";
             // 
-            // checkedListBox1
+            // cmbCategoryList
             // 
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(8, 31);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(337, 150);
-            this.checkedListBox1.TabIndex = 0;
+            this.cmbCategoryList.FormattingEnabled = true;
+            this.cmbCategoryList.Location = new System.Drawing.Point(27, 71);
+            this.cmbCategoryList.Name = "cmbCategoryList";
+            this.cmbCategoryList.Size = new System.Drawing.Size(255, 33);
+            this.cmbCategoryList.TabIndex = 0;
             // 
             // f_Stok
             // 
@@ -364,12 +376,10 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductId;
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
@@ -377,5 +387,8 @@ namespace Eyp_PaketServisv1._2
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductDate;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         public System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox cmbCategoryList;
     }
 }

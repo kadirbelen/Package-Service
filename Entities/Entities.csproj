@@ -42,8 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Concrete\Category.cs" />
+    <Compile Include="Concrete\Company.cs" />
     <Compile Include="Concrete\Customer.cs" />
+    <Compile Include="Concrete\Order.cs" />
+    <Compile Include="Concrete\OrderDetail.cs" />
     <Compile Include="Concrete\Product.cs" />
+    <Compile Include="Concrete\User.cs" />
+    <Compile Include="DTOs\OrderDetailOrProduct.cs" />
+    <Compile Include="DTOs\OrderOrCustomer.cs" />
     <Compile Include="DTOs\ProductNameGet.cs" />
     <Compile Include="DTOs\ProductOrCategoryDetails.cs" />
     <Compile Include="DTOs\ProductStockShow.cs" />

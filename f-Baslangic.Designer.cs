@@ -31,16 +31,16 @@ namespace Eyp_PaketServisv1._2
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnUserChange = new System.Windows.Forms.Button();
+            this.btnBackup = new System.Windows.Forms.Button();
             this.btnPriceChange = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnStock = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnPacketServis = new System.Windows.Forms.Button();
+            this.btnSettingsPage = new System.Windows.Forms.Button();
+            this.btnProductPage = new System.Windows.Forms.Button();
+            this.btnStockPage = new System.Windows.Forms.Button();
+            this.btnReportPage = new System.Windows.Forms.Button();
+            this.btnPacketService = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,14 +52,14 @@ namespace Eyp_PaketServisv1._2
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.button9, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button8, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnUserChange, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnBackup, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnPriceChange, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnStock, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnPacketServis, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnSettingsPage, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnProductPage, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnStockPage, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnReportPage, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnPacketService, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 112);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -87,35 +87,36 @@ namespace Eyp_PaketServisv1._2
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button8
+            // btnUserChange
             // 
-            this.button8.BackColor = System.Drawing.Color.Tomato;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(272, 249);
-            this.button8.Margin = new System.Windows.Forms.Padding(1);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(269, 122);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Kullanıcı Değiştir";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnUserChange.BackColor = System.Drawing.Color.Tomato;
+            this.btnUserChange.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnUserChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUserChange.ForeColor = System.Drawing.Color.White;
+            this.btnUserChange.Location = new System.Drawing.Point(272, 249);
+            this.btnUserChange.Margin = new System.Windows.Forms.Padding(1);
+            this.btnUserChange.Name = "btnUserChange";
+            this.btnUserChange.Size = new System.Drawing.Size(269, 122);
+            this.btnUserChange.TabIndex = 7;
+            this.btnUserChange.Text = "Kullanıcı Değiştir";
+            this.btnUserChange.UseVisualStyleBackColor = false;
+            this.btnUserChange.Click += new System.EventHandler(this.btnUserChange_Click);
             // 
-            // button7
+            // btnBackup
             // 
-            this.button7.BackColor = System.Drawing.Color.Tomato;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(1, 249);
-            this.button7.Margin = new System.Windows.Forms.Padding(1);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(269, 122);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Yedekleme";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnBackup.BackColor = System.Drawing.Color.Tomato;
+            this.btnBackup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBackup.ForeColor = System.Drawing.Color.White;
+            this.btnBackup.Location = new System.Drawing.Point(1, 249);
+            this.btnBackup.Margin = new System.Windows.Forms.Padding(1);
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.Size = new System.Drawing.Size(269, 122);
+            this.btnBackup.TabIndex = 6;
+            this.btnBackup.Text = "Yedekleme";
+            this.btnBackup.UseVisualStyleBackColor = false;
             // 
             // btnPriceChange
             // 
@@ -133,84 +134,84 @@ namespace Eyp_PaketServisv1._2
             this.btnPriceChange.UseVisualStyleBackColor = false;
             this.btnPriceChange.Click += new System.EventHandler(this.btnPriceChange_Click);
             // 
-            // button5
+            // btnSettingsPage
             // 
-            this.button5.BackColor = System.Drawing.Color.Tomato;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(272, 125);
-            this.button5.Margin = new System.Windows.Forms.Padding(1);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(269, 122);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Ayarlar";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnSettingsPage.BackColor = System.Drawing.Color.Tomato;
+            this.btnSettingsPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSettingsPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettingsPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSettingsPage.ForeColor = System.Drawing.Color.White;
+            this.btnSettingsPage.Location = new System.Drawing.Point(272, 125);
+            this.btnSettingsPage.Margin = new System.Windows.Forms.Padding(1);
+            this.btnSettingsPage.Name = "btnSettingsPage";
+            this.btnSettingsPage.Size = new System.Drawing.Size(269, 122);
+            this.btnSettingsPage.TabIndex = 4;
+            this.btnSettingsPage.Text = "Ayarlar";
+            this.btnSettingsPage.UseVisualStyleBackColor = false;
+            this.btnSettingsPage.Click += new System.EventHandler(this.btnAyarlar_Click);
             // 
-            // button4
+            // btnProductPage
             // 
-            this.button4.BackColor = System.Drawing.Color.Tomato;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1, 125);
-            this.button4.Margin = new System.Windows.Forms.Padding(1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(269, 122);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Ürün Girişi";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnProductPage.BackColor = System.Drawing.Color.Tomato;
+            this.btnProductPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnProductPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnProductPage.ForeColor = System.Drawing.Color.White;
+            this.btnProductPage.Location = new System.Drawing.Point(1, 125);
+            this.btnProductPage.Margin = new System.Windows.Forms.Padding(1);
+            this.btnProductPage.Name = "btnProductPage";
+            this.btnProductPage.Size = new System.Drawing.Size(269, 122);
+            this.btnProductPage.TabIndex = 3;
+            this.btnProductPage.Text = "Ürün Girişi";
+            this.btnProductPage.UseVisualStyleBackColor = false;
+            this.btnProductPage.Click += new System.EventHandler(this.button4_Click);
             // 
-            // btnStock
+            // btnStockPage
             // 
-            this.btnStock.BackColor = System.Drawing.Color.Tomato;
-            this.btnStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnStock.ForeColor = System.Drawing.Color.White;
-            this.btnStock.Location = new System.Drawing.Point(543, 1);
-            this.btnStock.Margin = new System.Windows.Forms.Padding(1);
-            this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(269, 122);
-            this.btnStock.TabIndex = 2;
-            this.btnStock.Text = "Stok Takibi";
-            this.btnStock.UseVisualStyleBackColor = false;
-            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
+            this.btnStockPage.BackColor = System.Drawing.Color.Tomato;
+            this.btnStockPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStockPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStockPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStockPage.ForeColor = System.Drawing.Color.White;
+            this.btnStockPage.Location = new System.Drawing.Point(543, 1);
+            this.btnStockPage.Margin = new System.Windows.Forms.Padding(1);
+            this.btnStockPage.Name = "btnStockPage";
+            this.btnStockPage.Size = new System.Drawing.Size(269, 122);
+            this.btnStockPage.TabIndex = 2;
+            this.btnStockPage.Text = "Stok Takibi";
+            this.btnStockPage.UseVisualStyleBackColor = false;
+            this.btnStockPage.Click += new System.EventHandler(this.btnStock_Click);
             // 
-            // button2
+            // btnReportPage
             // 
-            this.button2.BackColor = System.Drawing.Color.Tomato;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(272, 1);
-            this.button2.Margin = new System.Windows.Forms.Padding(1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(269, 122);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Raporlar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnReportPage.BackColor = System.Drawing.Color.Tomato;
+            this.btnReportPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReportPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnReportPage.ForeColor = System.Drawing.Color.White;
+            this.btnReportPage.Location = new System.Drawing.Point(272, 1);
+            this.btnReportPage.Margin = new System.Windows.Forms.Padding(1);
+            this.btnReportPage.Name = "btnReportPage";
+            this.btnReportPage.Size = new System.Drawing.Size(269, 122);
+            this.btnReportPage.TabIndex = 1;
+            this.btnReportPage.Text = "Raporlar";
+            this.btnReportPage.UseVisualStyleBackColor = false;
             // 
-            // btnPacketServis
+            // btnPacketService
             // 
-            this.btnPacketServis.BackColor = System.Drawing.Color.Tomato;
-            this.btnPacketServis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPacketServis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPacketServis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnPacketServis.ForeColor = System.Drawing.Color.White;
-            this.btnPacketServis.Location = new System.Drawing.Point(1, 1);
-            this.btnPacketServis.Margin = new System.Windows.Forms.Padding(1);
-            this.btnPacketServis.Name = "btnPacketServis";
-            this.btnPacketServis.Size = new System.Drawing.Size(269, 122);
-            this.btnPacketServis.TabIndex = 0;
-            this.btnPacketServis.Text = "Paket Servis";
-            this.btnPacketServis.UseVisualStyleBackColor = false;
-            this.btnPacketServis.Click += new System.EventHandler(this.btnPacketServis_Click);
+            this.btnPacketService.BackColor = System.Drawing.Color.Tomato;
+            this.btnPacketService.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPacketService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPacketService.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPacketService.ForeColor = System.Drawing.Color.White;
+            this.btnPacketService.Location = new System.Drawing.Point(1, 1);
+            this.btnPacketService.Margin = new System.Windows.Forms.Padding(1);
+            this.btnPacketService.Name = "btnPacketService";
+            this.btnPacketService.Size = new System.Drawing.Size(269, 122);
+            this.btnPacketService.TabIndex = 0;
+            this.btnPacketService.Text = "Paket Servis";
+            this.btnPacketService.UseVisualStyleBackColor = false;
+            this.btnPacketService.Click += new System.EventHandler(this.btnPacketServis_Click);
             // 
             // label1
             // 
@@ -223,17 +224,17 @@ namespace Eyp_PaketServisv1._2
             this.label1.TabIndex = 1;
             this.label1.Text = " | İşyeri Bilgisi";
             // 
-            // label12
+            // lblUserName
             // 
-            this.label12.AutoSize = true;
-            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.ForeColor = System.Drawing.Color.Tomato;
-            this.label12.Location = new System.Drawing.Point(107, 512);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 25);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Admin";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUserName.ForeColor = System.Drawing.Color.Tomato;
+            this.lblUserName.Location = new System.Drawing.Point(107, 512);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(68, 25);
+            this.lblUserName.TabIndex = 8;
+            this.lblUserName.Text = "Admin";
             // 
             // label11
             // 
@@ -254,7 +255,7 @@ namespace Eyp_PaketServisv1._2
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(852, 564);
             this.ControlBox = false;
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -276,16 +277,16 @@ namespace Eyp_PaketServisv1._2
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button btnPriceChange;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnStock;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnPacketServis;
+        private System.Windows.Forms.Button btnUserChange;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Button btnReportPage;
+        public System.Windows.Forms.Button btnPacketService;
+        public System.Windows.Forms.Button btnProductPage;
+        public System.Windows.Forms.Button btnStockPage;
+        public System.Windows.Forms.Button btnBackup;
+        public System.Windows.Forms.Button btnPriceChange;
+        public System.Windows.Forms.Button btnSettingsPage;
+        public System.Windows.Forms.Label lblUserName;
     }
 }

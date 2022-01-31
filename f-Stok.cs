@@ -18,29 +18,36 @@ namespace Eyp_PaketServisv1._2
         {
             InitializeComponent();
 
-            foreach (var item in categoryManager.GetAll())
-            {
-                checkedListBox1.Items.Add(item.CategoryName);
-            }
-            checkedListBox1.CheckOnClick = true;//seçimi tek tıklama ile yapar
+            var categoryList = categoryManager.GetAll();
+            cmbCategoryList.DataSource = categoryList;
+            cmbCategoryList.DisplayMember = "CategoryName";
+            cmbCategoryList.ValueMember = "CategoryId";
+            //foreach (var item in categoryManager.GetAll())
+            //{
+            //    checkedListBox1.Items.Add(item.CategoryName);
+            //}
+            //checkedListBox1.CheckOnClick = true;//seçimi tek tıklama ile yapar
         }
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
         ProductManager productManager = new ProductManager(new EfProductDal());
+        bool IsClick = false;
         private void f_Stok_Load(object sender, EventArgs e)
         {
+
             //SearchProductDate(dateTimePicker1.Value,dateTimePicker2.Value);
         }
-        public void SearchProductCategories(string key)
-        {
-            var result = productManager.GetProductStockSearch(key).ToList();
-            
-            dataGridView1.DataSource = result + dataGridView1.DataSource.ToString();
-
-        }
+      
         public void SearchProductDate(DateTime dateTime1, DateTime dateTime2)
         {
             var result = productManager.GetProductSearchDate(dateTime1, dateTime2);
-            dataGridView1.DataSource = result;
+            dataGridView1.DataSource = result.Select(x => new
+            {
+                x.ProductId,
+                x.CategoryName,
+                x.ProductName,
+                x.Stock,
+                x.ProductDate
+            }).ToList();
         }
         private void btnShow_Click(object sender, EventArgs e)
         {
@@ -50,8 +57,30 @@ namespace Eyp_PaketServisv1._2
             //    var value = checkedListBox1.CheckedItems[i];
             //    SearchProductCategories(value.ToString());
             //}
-
             SearchProductDate(dateTimePicker1.Value, dateTimePicker2.Value);
+
+            if (listBox1.SelectedIndex==0)
+            {
+                SearchProductDate(dateTimePicker1.Value, dateTimePicker2.Value);
+            }
+            else if(listBox1.SelectedIndex==1)
+            {
+                var result= productManager.GetProductStockCategoryId(dateTimePicker1.Value, dateTimePicker2.Value, (int)cmbCategoryList.SelectedValue);
+                dataGridView1.DataSource = result.Select(x => new
+                {
+                    x.ProductId,
+                    x.CategoryName,
+                    x.ProductName,
+                    x.Stock,
+                    x.ProductDate
+                }).ToList();
+               
+                MessageBox.Show("Ürün grubuna göre filtrele");
+            }
+           
+
+
+
 
         }
 
@@ -60,5 +89,7 @@ namespace Eyp_PaketServisv1._2
             ProductStockReport productStockReport = new ProductStockReport();
             productStockReport.ShowDialog();
         }
+
+        
     }
 }

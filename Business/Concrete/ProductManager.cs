@@ -59,6 +59,11 @@ namespace Business.Concrete
         {
             return _productDal.GetProductStockShows().Where(p => p.CategoryName == key).ToList();
         }
+        public List<ProductStockShow> GetProductStockCategoryId(DateTime dateTime1, DateTime dateTime2,int categoryId)
+        {
+            return _productDal.GetProductStockShows().Where(p => p.ProductDate > dateTime1 & p.ProductDate < dateTime2 & p.CategoryId== categoryId).ToList();
+        }
+
 
         public List<ProductStockShow> GetProductSearchDate(DateTime dateTime1,DateTime dateTime2)
         {
@@ -70,5 +75,7 @@ namespace Business.Concrete
             return _productDal.GetListCategoryId(categoryId);
 
         }
+
+      
     }
 }
